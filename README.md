@@ -1,12 +1,10 @@
 # Simple Book Recommendation System (Spark + Flask)
 
-This project is a **very simple end‑to‑end book recommendation system** that runs locally on your machine. It uses:
+This project is a **very simple end‑to‑end book recommendation system** that runs locally on the machine. It uses:
 
 - **Apache Spark (PySpark)** for training an **ALS (matrix factorization)** recommendation model.
 - **Flask** for a tiny web frontend to query recommendations.
 - Either a small demo CSV or the **Kaggle Book‑Crossing dataset** (via a prep script) as the source of user–book ratings.
-
-Everything is designed to be **easy to understand and demo** for coursework or learning.
 
 ---
 
@@ -119,7 +117,7 @@ pip install -r requirements.txt
 
 ### 4.3. Prepare the data
 
-Place your CSV file in `data/`:
+Place the CSV file in `data/`:
 
 ```bash
 mkdir -p data
@@ -155,7 +153,7 @@ Run the Flask app:
 python src/app.py
 ```
 
-Then open your browser at:
+Then open the browser at:
 
 ```text
 http://127.0.0.1:5000/
@@ -163,7 +161,7 @@ http://127.0.0.1:5000/
 
 Type a valid **user ID** from your dataset (for example, `1`, `2`, `3`, etc.) and click **“Get recommendations”**.
 
-You should see a simple table of recommended books for that user.
+A simple table of recommended books for that user will be visible.
 
 ---
 
@@ -180,5 +178,5 @@ You should see a simple table of recommended books for that user.
    - Enter a user ID that exists in your dataset.
    - Show the top recommended books and their scores.
 
-This gives you a **complete, local, end‑to‑end recommendation system**: from raw CSV data, to model training, to a small UI that a user can interact with.
+This gives a **complete, local, end‑to‑end recommendation system**: from raw CSV data, to model training, to a small UI that a user can interact with.
 
